@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/courseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Name" />
+
+    <EditText
+        android:id="@+id/courseHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Hours"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/courseType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course" />
+
+        <RadioButton
+            android:id="@+id/radioWorkshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workshop" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/teacherSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/addCourseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Course" />
+
+</LinearLayout>
